@@ -1,91 +1,74 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
 .table-container {
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.todo-title {
-    margin-top: 0;
-    margin-bottom: 20px;
-    color: #333;
-    font-size: 24px;
+    border: 1px solid #bbb;
+    width: 70%;
+    margin: 0 auto;
+    padding: 0px 30px 30px 30px;
+    border-radius: 10px;
+  }
+  .todo-title {
     text-align: center;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 15px;
-    margin: 5px 0;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td,
+  th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+  
+  .btn {
+    border: 1px solid #bbb;
+    padding: 4px 10px;
     border-radius: 4px;
     text-decoration: none;
-    text-align: center;
+    color: #000;
+  }
+  
+  .btn:hover {
+    background-color: #ccc;
+    color: #555;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #0056b3;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.new-todo, .update-todo {
-    margin-top: 10px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="text"] {
+  }
+  
+  .new-todo,
+  .update-todo {
+    max-width: 786px;
+    margin: auto;
+  }
+  
+  .form-group,
+  .new-todo .form-group,
+  .update-todo .form-group {
+    margin: 0.4em 0;
+  }
+  
+  .form-group input[type="text"],
+  .new-todo .form-group input[type="text"],
+  .update-todo .form-group input[type="text"] {
     width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.confirm {
+    padding: 0.6em 1em;
+    margin: 0.5em 0;
+    border: 1px solid #aaa;
+    font-family: "Barlow", sans-serif;
+    font-size: 1em;
+    border-radius: 0.2em;
+  }
+  
+  .confirm {
+    border: 1px solid #ddd;
+    width: 786px;
+    margin: 0 auto;
+    padding: 30px 0px;
     text-align: center;
-    margin-top: 20px;
-}
-
-.confirm p {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .table-container {
-        width: 90%;
-    }
-}
+    border-radius: 10px;
+  }
