@@ -1,6 +1,5 @@
 const mongoose=require("mongoose");
 
-const connectionURL="mongodb://localhost:27017/todoDb";
 const connectMongodb= async()=>{
     try {
         await mongoose.connect(process.env.CONNECTION_URL);
